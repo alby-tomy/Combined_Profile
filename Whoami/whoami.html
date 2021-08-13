@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who Am I</title>
+    <link rel="stylesheet" href="/CSS/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Poppins:wght@200;300;400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fdf04647a2.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <section class="header">
+        <nav>
+        <a href="index.html"><img src="/image/32.png.png "></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fas fa-times"  onclick="hideMenu()"></i>
+
+            <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/WHOAMI/whoami.html">WHOAMI</a></li>
+                <li><a href="/Skills/skills.html">SKILLS</a></li>
+                <li><a href="/Projects/project.html">MY PROJECT</a></li>
+                <li><a href="/Contact/contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" id="bar_menu" onclick="showMenu()"></i> 
+        </nav>
+
+        <di>
+            <h1 class="whoami">
+                WHO AM I
+            </h1>
+        </di>
+    </section>
+
+    <!-------Javascript----------->
+    <script>
+var short_menu = document.getElementById("navLinks");
+function showMenu()
+{
+    short_menu.style.right = "0";
+    bar_menu.style.display = "none";
+    
+}
+function hideMenu()
+{
+    short_menu.style.right = "-200px"
+    bar_menu.style.display ="block";
+}
+    </script>
+</script>
+</body>
+
+</html>
